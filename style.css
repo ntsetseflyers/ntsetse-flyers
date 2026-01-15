@@ -28,18 +28,28 @@ nav a {
     padding: 12px 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
 nav a:hover {
-    background: #1b5e20; /* darker green on hover */
+    background: #1b5e20;
+    transform: scale(1.05);
 }
+
 
 section {
     background: white;
     margin: 15px;
     padding: 20px;
     border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
 
 h2 {
     color: #1b5e20; /* green headings */
@@ -54,7 +64,14 @@ h2 {
 .gallery img {
     width: 100%;
     border-radius: 6px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
+.gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
 
 form {
     max-width: 500px;
@@ -103,3 +120,4 @@ footer {
         padding: 10px;
     }
 }
+
