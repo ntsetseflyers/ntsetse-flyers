@@ -1,11 +1,11 @@
-body {
+body { 
     font-family: Arial, sans-serif;
     margin: 0;
-    background: #f4f4f4;
+    background: #f0f7f0; /* light green background */
 }
 
 header {
-    background: #004080;
+    background: #1b5e20; /* dark green */
     color: white;
     text-align: center;
     padding: 20px;
@@ -17,7 +17,7 @@ header img {
 }
 
 nav {
-    background: #333;
+    background: #2e7d32; /* medium green */
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -31,7 +31,7 @@ nav a {
 }
 
 nav a:hover {
-    background: #004080;
+    background: #1b5e20; /* darker green on hover */
 }
 
 section {
@@ -42,7 +42,7 @@ section {
 }
 
 h2 {
-    color: #004080;
+    color: #1b5e20; /* green headings */
 }
 
 .gallery {
@@ -66,11 +66,11 @@ input, textarea {
     padding: 10px;
     margin: 8px 0;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 1px solid #81c784; /* light green border */
 }
 
 button {
-    background: #004080;
+    background: #2e7d32; /* green button */
     color: white;
     border: none;
     padding: 10px;
@@ -80,18 +80,18 @@ button {
 }
 
 button:hover {
-    background: #003060;
+    background: #1b5e20;
 }
 
 .social a {
     margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
-    color: #004080;
+    color: #2e7d32;
 }
 
 footer {
-    background: #333;
+    background: #1b5e20;
     color: white;
     text-align: center;
     padding: 15px;
