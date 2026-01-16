@@ -1,50 +1,259 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact | Ntsetse Flyers</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Ntsetse Flyers FC</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5fff8;
+            color: #1f2933;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HEADER */
+        header {
+            background: #064e3b; /* Dark Green */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #047857; /* Green */
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 15px 22px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #065f46;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(rgba(6,78,59,0.8), rgba(6,78,59,0.8)),
+                        url("images/contact-hero.jpg") center/cover no-repeat;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            max-width: 700px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+
+        /* CONTAINER */
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            color: #064e3b;
+            margin-bottom: 15px;
+        }
+
+        /* GRID */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* INFO CARDS */
+        .info-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            margin-bottom: 20px;
+            border-left: 6px solid #047857;
+        }
+
+        .info-card i {
+            font-size: 1.8rem;
+            color: #047857;
+            margin-bottom: 10px;
+        }
+
+        /* FORM */
+        form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #a7f3d0;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        button {
+            background: #047857;
+            color: #ffffff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #065f46;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #064e3b;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <img src="logo.jpg">
-    <h1>Contact Us</h1>
-</header>
+    <!-- HEADER -->
+    <header>
+        <img src="logo.jpg" alt="Ntsetse Flyers FC Logo">
+        <h1>Ntsetse Flyers FC</h1>
+        <p>Flying Towards Excellence</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- NAV -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Team</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<section>
-    <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-<center>
-    <div class="social">
-        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-        <a href="https://whatsapp.com/channel/0029VbBputw1t90dgehHze0w"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-    </div>
-    </center>
-</section>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>
+            Get in touch with Ntsetse Flyers Football Club.
+            We welcome players, supporters, sponsors, and partners.
+        </p>
+    </section>
 
-<footer>
-    <p>&copy; 2026 Ntsetse Flyers</p>
-</footer>
+    <!-- CONTACT CONTENT -->
+    <section class="container">
+        <div class="contact-grid">
+
+            <!-- INFO -->
+            <div>
+                <div class="info-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2>Location</h2>
+                    <p>Eswatini</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <h2>Phone</h2>
+                    <p>+268 XXX XXXX</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h2>Email</h2>
+                    <p>info@ntsetseflyers.co.sz</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fa-solid fa-users"></i>
+                    <h2>Club Community</h2>
+                    <p>
+                        Ntsetse Flyers FC is built on unity, discipline, and passion.
+                        Together we grow, compete, and inspire.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FORM -->
+            <div>
+                <form>
+                    <h2>Send Us a Message</h2>
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Your full name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Your email address" required>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Write your message here..." required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Ntsetse Flyers FC | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
-
-
-
