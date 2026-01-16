@@ -1,39 +1,270 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ntsetse Flyers | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ntsetse Flyers FC | Home</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Optional external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        header {
+            background: #0f766e;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            height: 80px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 1.1rem;
+        }
+
+        nav {
+            background: #1f2933;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px 25px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background: #0f766e;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+                        url("images/home-hero.jpg") center/cover no-repeat;
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .hero-buttons {
+            margin-top: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        .btn-primary {
+            background: #0f766e;
+            color: #fff;
+        }
+
+        .btn-outline {
+            border: 2px solid #fff;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1f2933;
+            margin-bottom: 20px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #555;
+            max-width: 700px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .feature i {
+            font-size: 2.5rem;
+            color: #0f766e;
+            margin-bottom: 15px;
+        }
+
+        .split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .split img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .split {
+                grid-template-columns: 1fr;
+            }
+            .hero h2 {
+                font-size: 2.2rem;
+            }
+        }
+
+        .cta {
+            background: #0f766e;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta h2 {
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background: #1f2933;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
+
 <body>
 
-<header>
-    <img src="logo.jpg" alt="Ntsetse Flyers Logo">
-    <h1>Ntsetse Flyers</h1>
-    <p>Flying Towards Excellence</p>
-</header>
+    <!-- HEADER -->
+    <header>
+        <img src="logo.png" alt="Ntsetse Flyers Logo">
+        <h1>Ntsetse Flyers FC</h1>
+        <p>Flying Towards Excellence</p>
+    </header>
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="team.html">Team</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="events.html">Events</a>
-    <a href="contact.html">Contact</a>
-</nav>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-<section>
-    <h2>Welcome</h2>
-    <p>
-        Ntsetse Flyers is a community sports team dedicated to discipline,
-        teamwork, and excellence on and off the field.
-    </p>
-</section>
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h2>More Than a Club, One Family</h2>
+            <p>Ntsetse Flyers FC is a community-focused, inclusive football family dedicated to unity, discipline, and personal growth for all players and supporters.</p>
+            <div class="hero-buttons">
+                <a href="about.html" class="btn btn-primary">Learn More</a>
+                <a href="contact.html" class="btn btn-outline">Join Us</a>
+            </div>
+        </div>
+    </section>
 
-<footer>
-    <p>&copy; 2026 Ntsetse Flyers | Eswatini</p>
-</footer>
+    <!-- FEATURES -->
+    <section class="container">
+        <h2>Why Choose Ntsetse Flyers</h2>
+        <p class="subtitle">We are committed to building not only skilled footballers but strong character and unity within our community.</p>
+        <div class="features">
+            <div class="feature">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>Family-Oriented</h3>
+                <p>Everyone is welcomed and valued as part of our united football family.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-handshake-angle"></i>
+                <h3>Inclusive</h3>
+                <p>We accommodate players of all ages, abilities, and backgrounds.</p>
+            </div>
+            <div class="feature">
+                <i class="fa-solid fa-futbol"></i>
+                <h3>Focused on Growth</h3>
+                <p>We develop football skills, leadership, and life skills for every member.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGE + TEXT -->
+    <section class="container split">
+        <img src="images/home-action.jpg" alt="Ntsetse Flyers Match Action">
+        <div>
+            <h2>Building More Than Footballers</h2>
+            <p>Football at Ntsetse Flyers is a tool for discipline, teamwork, and personal development. We focus on respect, dedication, and continuous improvement both on and off the pitch.</p>
+            <a href="about.html" class="btn btn-primary">Our Story</a>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta">
+        <h2>Be Part of the Ntsetse Flyers Family</h2>
+        <p>Join us as a player, supporter, volunteer, or partner — there is a place for everyone.</p>
+        <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Ntsetse Flyers FC | Eswatini</p>
+    </footer>
 
 </body>
 </html>
-
