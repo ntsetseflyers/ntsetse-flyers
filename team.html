@@ -1,122 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Our Team | Ntsetse Flyers</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team | Ntsetse Flyers FC</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4fff6;
+    color: #1b5e20;
+}
+
+header {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    height: 80px;
+}
+
+nav {
+    background: #2e7d32;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #1b5e20;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.member {
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.member img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.role {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 50%;
+    z-index: 1000;
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <img src="logo.jpg" alt="Ntsetse Flyers Logo">
-    <h1>Our Team</h1>
+    <h1>Ntsetse Flyers FC</h1>
+    <p>One Family • One Team</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="team.html">Team</a>
-    <a href="gallery.html">Gallery</a>
     <a href="events.html">Events</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-<section>
-    <h2>Club Leadership</h2>
+<div class="container">
 
-    <div class="team-grid">
-        <!-- PRESIDENT -->
-        <div class="team-card">
-            <img src="president.jpg" alt="President">
-            <h3>President</h3>
-            <p><strong>Name:</strong> Mr Amstrong Dlamini_</p>
-            <p><strong>Role:</strong> Club President</p>
-        </div>
-
-        <!-- MANAGERS -->
-        <div class="team-card">
-            <img src="manager1.jpg" alt="Manager">
-            <h3>Manager</h3>
-            <p><strong>Name:</strong> Mr. Oscar Mlotshwa</p>
-        </div>
-
-        <div class="team-card">
-            <img src="manager2.jpg" alt="Manager">
-            <h3>Manager</h3>
-            <p><strong>Name:</strong> Mr. Sabelo Dlamini</p>
-        </div>
-
-        <!-- SECRETARY -->
-        <div class="team-card">
-            <img src="secretary.jpg" alt="Secretary">
-            <h3>Secretary</h3>
-            <p><strong>Name:</strong> Mr. Siyabonga Muntu Ginindza</p>
-        </div>
+<h2>Club Leadership</h2>
+<div class="team-grid">
+    <div class="member">
+        <img src="images/president.jpg">
+        <h3>President</h3>
+        <p class="role">Club President</p>
     </div>
-</section>
-
-<section>
-    <h2>Marketing Team</h2>
-
-    <div class="team-grid">
-        <div class="team-card">
-            <img src="marketing1.jpg">
-            <h3>Marketing Officer</h3>
-            <p>Name: Mr. Nkululeko Magagula</p>
-        </div>
-
-        <div class="team-card">
-            <img src="marketing2.jpg">
-            <h3>Marketing Officer</h3>
-            <p>Name: Mr. Themba Ngozo</p>
-        </div>
-
-        <div class="team-card">
-            <img src="marketing3.jpg">
-            <h3>Marketing Officer</h3>
-            <p>Name: Mr. Wandile Dlamini</p>
-        </div>
+    <div class="member">
+        <img src="images/manager1.jpg">
+        <h3>Manager</h3>
+        <p class="role">Team Manager</p>
     </div>
-</section>
-
-<section>
-    <h2>Players</h2>
-
-    <div class="team-grid">
-
-        <!-- PLAYER TEMPLATE (COPY 25 TIMES) -->
-        <div class="team-card">
-            <img src="player1.jpg" alt="Player">
-            <h3>Player Name: Sanele Myalo Zikalala</h3>
-            <p><strong>Position:</strong> Attacker</p>
-            <p><strong>Jersey No:</strong> 11</p>
-        </div>
-
-        <div class="team-card">
-            <img src="player2.jpg" alt="Player">
-            <h3>Player Name: Buswayinkhosi Mavuso</h3>
-            <p><strong>Position:</strong> Goalkeeper</p>
-            <p><strong>Jersey No:</strong> 16</p>
-        </div>
-
-        <div class="team-card">
-            <img src="player3.jpg" alt="Player">
-            <h3>Player Name</h3>
-            <p><strong>Position:</strong> __________</p>
-            <p><strong>Jersey No:</strong> ___</p>
-        </div>
-
-        <!-- Repeat until Player 25 -->
-
+    <div class="member">
+        <img src="images/manager2.jpg">
+        <h3>Manager</h3>
+        <p class="role">Assistant Manager</p>
     </div>
-</section>
+    <div class="member">
+        <img src="images/secretary.jpg">
+        <h3>Secretary</h3>
+        <p class="role">Club Secretary</p>
+    </div>
+</div>
+
+<h2 style="margin-top:60px;">Marketing Team</h2>
+<div class="team-grid">
+    <div class="member"><img src="images/marketing1.jpg"><h3>Marketing</h3></div>
+    <div class="member"><img src="images/marketing2.jpg"><h3>Marketing</h3></div>
+    <div class="member"><img src="images/marketing3.jpg"><h3>Marketing</h3></div>
+</div>
+
+<h2 style="margin-top:60px;">Players</h2>
+<div class="team-grid">
+    <!-- Duplicate for 25 players -->
+    <div class="member"><img src="images/player.jpg"><h3>Player Name</h3><p class="role">Position</p></div>
+</div>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/268XXXXXXXX" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
 <footer>
-    <p>&copy; 2026 Ntsetse Flyers | Eswatini</p>
+    <p>&copy; 2026 Ntsetse Flyers FC</p>
 </footer>
 
 </body>
 </html>
-
-
-
