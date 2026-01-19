@@ -1,38 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Events | Ntsetse Flyers</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events | Ntsetse Flyers FC</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4fff6;
+    color: #1b5e20;
+}
+
+header {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header img {
+    height: 80px;
+}
+
+nav {
+    background: #2e7d32;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #1b5e20;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.event {
+    background: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 6px solid #2e7d32;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.event h3 {
+    margin-top: 0;
+}
+
+.map {
+    margin-top: 50px;
+}
+
+footer {
+    background: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    font-size: 28px;
+    padding: 15px;
+    border-radius: 50%;
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <img src="logo.jpg">
-    <h1>Events & Fixtures</h1>
+    <h1>Ntsetse Flyers FC</h1>
+    <p>Club Events & Activities</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="team.html">Team</a>
-    <a href="gallery.html">Gallery</a>
     <a href="events.html">Events</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-<section>
-    <h2>Upcoming Matches</h2>
-    <ul>
-        <li>Ntsetse Flyers vs Eagles – 20 March 2026</li>
-        <li>Ntsetse Flyers vs Lions – 27 March 2026</li>
-    </ul>
-</section>
+<div class="container">
+
+<div class="event">
+    <h3>League Match</h3>
+    <p><strong>Date:</strong> TBD</p>
+    <p><strong>Venue:</strong> Home Ground</p>
+    <p>Competitive league fixture representing Ntsetse Flyers FC.</p>
+</div>
+
+<div class="event">
+    <h3>Training Session</h3>
+    <p><strong>Date:</strong> Weekly</p>
+    <p><strong>Venue:</strong> Training Grounds</p>
+    <p>Focused training to develop discipline, fitness, and teamwork.</p>
+</div>
+
+<div class="event">
+    <h3>Community Outreach</h3>
+    <p><strong>Date:</strong> Scheduled</p>
+    <p><strong>Venue:</strong> Local Community</p>
+    <p>Giving back and strengthening community relationships.</p>
+</div>
+
+<div class="map">
+    <h2>Our Location</h2>
+    <iframe 
+        src="https://www.google.com/maps?q=Eswatini&output=embed"
+        width="100%" 
+        height="350" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+    </iframe>
+</div>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/268XXXXXXXX" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
 
 <footer>
-    <p>&copy; 2026 Ntsetse Flyers</p>
+    <p>&copy; 2026 Ntsetse Flyers FC</p>
 </footer>
 
 </body>
 </html>
-
